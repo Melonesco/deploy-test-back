@@ -5,9 +5,7 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "dev": "node server.js",
-    "server": "nodemon server.js",
-    "heroku-postbuild": " npm install --prefix client && npm install && npm run build:client"
+    "start": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
