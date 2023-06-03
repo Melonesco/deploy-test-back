@@ -7,11 +7,7 @@
   "scripts": {
     "dev": "node server.js",
     "server": "nodemon server.js",
-    "heroku-postbuild": " npm install --prefix client && npm install && npm run build:client",
-    "start": "concurrently  \"npm run server\" \"npm run client\"",
-    "build": "netlify deploy --prod",
-    "build:client": "npm run build --prefix client",
-    "client": "cd client && cd build && npm run start"
+    "heroku-postbuild": " npm install --prefix client && npm install && npm run build:client"
   },
   "author": "",
   "license": "ISC",
